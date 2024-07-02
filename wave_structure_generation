@@ -1,0 +1,20 @@
+% Parameters
+R = 4;  % Radius of the larger circle
+r = 1;  % Radius of the smaller circle
+t = 0:0.01:20*pi;  % Parameter values
+
+% Trochoidal equations
+x = R * t - r * sin(t);
+y = R - r * cos(t);
+
+% Plot
+figure;
+plot(x, y);
+title('Trochoidal Wave');
+xlabel('x');
+ylabel('y');
+axis equal;  % Equal scaling on both axes
+grid on;
+
+% Customize the plot if needed
+% For example, you can change line colors, line styles, or add labels.
