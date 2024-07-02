@@ -1,0 +1,34 @@
+Lx = 5;     % Length of the domain in the x-direction
+Ly = 5;     % Length of the domain in the y-direction
+Nx = 100;    % Number of grid points in the x-direction
+Ny = 100;    % Number of grid points in the y-direction
+tmax = 20;   % Total simulation time
+c = 0.3;     % Phase speed
+
+% Create grid
+x = linspace(0, Lx, Nx);
+y = linspace(0, Ly, Ny);
+[X, Y] = meshgrid(x, y);
+
+% Initialize time
+t = 0;
+
+% Generate ocean wave height data
+H =  R * t - r * sin(t);
+% Create a surface plot of the ocean wave
+figure;
+surf(x, y, H);
+title('Ocean Wave Simulation');
+xlabel('X');
+ylabel('Y');
+zlabel('Wave Height');
+axis([0, Lx, 0, Ly, -0.4, 0.4]);
+shading interp;
+
+% Animation loop
+for t = 0:0.1:tmax
+    H = R * t - r * sin(t);
+    surf(x, y, H);
+    title(['Ocean Wave Simulation (t = ', num2str(t), ')']);
+    drawnow;
+end
