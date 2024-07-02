@@ -1,0 +1,7 @@
+References
+Tessendorf, Jerry. 2001. Simulating Ocean Water. SIG-GRAPH'99 Course Note.
+Christopher J. Horvath. 2015. Empirical directional wave spectra for computer graphics. In Proceedings of the 2015 Symposium on Digital Production (DigiPro '15). Association for Computing Machinery, New York, NY, USA, 29–39. DOI:10.1145/2791261.2791267
+Flügge F.-J. 2017. Realtime GPGPU FFT Ocean Water Simulation, Institute of Embedded Systems.
+Tcheblokov T. 2015. Ocean simulation and rendering in War Thunder, NVIDIA, CGDC 2015.
+Gamper T. 2018. Ocean Surface Generation and Rendering, Vienna University of Technology, the Faculty of Informatics.
+Matusiak R. 2002. Implementing Fast Fourier Transform Algorithms of Real-Valued Sequences With the TMS 320 DSP Platform.
